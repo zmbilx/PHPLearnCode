@@ -1,0 +1,10 @@
+<?php
+/**
+ * Created by PhpStorm.
+ * User: admin
+ * Date: 2019/11/25
+ * Time: 22:16
+ */
+$str="PHP ±à³Ì´Êµä@NET±à³Ì´Êµä@ASP±à³Ì´Êµä@JSP±à³Ì´Êµä";
+$str_arr=explode("@",$str);     //  °Ñ@µ±×÷·Ö¸î·û
+print_r($str_arr);

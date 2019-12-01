@@ -1,0 +1,11 @@
+<?php
+/**
+ * Created by PhpStorm.
+ * User: admin
+ * Date: 2019/11/25
+ * Time: 22:23
+ */
+$str="PHP ±à³Ì´Êµä@NET±à³Ì´Êµä@ASP±à³Ì´Êµä@JSP±à³Ì´Êµä";
+$str_arr=explode("@",$str);
+$array=implode("-",$str_arr);
+echo $array;

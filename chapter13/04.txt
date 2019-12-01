@@ -1,0 +1,1 @@
+HTTP通过两种方式验证对象是否有更新if-non-match 或者 if-modified-since. 通过在Request中包含上述header向服务器发起询问。当response中包含E-tag头时，浏览器应该使用if-non-match来询问；response中含有last-modified头时，浏览器应用if-modified-since来进行更新询问。HTTP1.1规范建议使用E-tag方式（当不能使用e-tag方式时使用last-modified），但事实上很多现代服务器依然使用last-modified方式。当服务器同时使用E-tag和last-modified时，浏览器应同时发送if-non-match和if-modified-since头，服务器应同时对这两个头进行确认，只有同时符合未更新条件方可返回304响应。
